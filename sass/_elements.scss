@@ -1,0 +1,19 @@
+/* Buttons */
+
+.btn-primary {
+  @include btn($button-color, $color-light);
+}
+
+/* Form Elements */
+
+input,
+select,
+textarea {
+  border: 1px solid $input-border-color;
+  border-radius: $radius;
+  padding: 12px;
+
+  &:focus {
+    border-color: #b1b1b1;
+  }
+}
