@@ -2,18 +2,17 @@
   box-sizing: border-box;
 }
 
-// body {
-//   margin: 0;
-//   background: lighten($font-main-color, 75%);
-//   font-family: $brand-font;
-//   font-size: 14px;
-//   line-height: 1.7;
-//   font-weight: $font-normal;
-//   color: $font-main-color;
-// }
-
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0 20px;
+html {
+  font-size: 10px;
 }
+
+body {
+  margin: 0;
+  line-height: 1.7;
+  font-family: $brand-font;
+  font-weight: $font-normal;
+  color: $font-main-color;
+  background-color: #f4f4f1;
+}
+
+

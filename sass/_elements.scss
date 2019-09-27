@@ -17,3 +17,46 @@ textarea {
     border-color: #b1b1b1;
   }
 }
+
+/* Icons */
+
+.icon {
+  font-size: 1.6rem;
+
+  &.icon-arrow-down {
+    font-size: 1.1rem;
+    height: 11px;
+
+    &:hover {
+      color: $link-hover-color;
+      cursor: pointer;
+    }
+  }
+  &.icon-wallet {
+    height: 20px;
+  }
+  &.icon-notification {
+    position: relative;
+
+    &:hover {
+      color: $link-hover-color;
+      cursor: pointer;
+    }
+  }
+
+  &.icon-quit:hover {
+    cursor: pointer;
+    color: $link-hover-color;
+  }
+}
+
+.i-status {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $button-color;
+  z-index: 1;
+}

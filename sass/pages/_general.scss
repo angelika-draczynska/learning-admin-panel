@@ -1,0 +1,27 @@
+.general__calendar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 33px 0;
+  border-top: 1px solid #e3e3e3;
+}
+
+.general__statistics {
+  display: flex;
+  justify-content: center;
+  flex: 100%;
+}
+
+.single-stat {
+  display: flex;
+  border-bottom: 1px solid #e3e3e3;
+  align-content: space-between
+}
+
+.row-stats {
+  display: flex;
+  flex: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

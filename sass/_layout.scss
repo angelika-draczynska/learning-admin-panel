@@ -1,0 +1,52 @@
+.main-container {
+  // width: 100vw;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-end;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.general-wrapper {
+  flex: 0 0 85%;
+  background-color: $page-background-color;
+}
+
+#pages {
+  margin: 7rem 0 0 29rem;
+}
+
+
+.content__header {
+  flex: 1 1 100%;
+  width: 100%;
+  padding: 1px 0;
+  background-color: $color-light;
+
+  h1 {
+    margin-left: 5px;
+  }
+}
+
+.content__body {
+  background-color: $color-light;
+  flex: 100%;
+}
