@@ -1,5 +1,4 @@
 .main-container {
-  // width: 100vw;
   margin: 0 auto;
 }
 
@@ -15,25 +14,45 @@
   align-items: flex-end;
   width: calc(100% - 30px);
   margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 4px 6px 0 rgba(0, 0, 0, 0.05);
 
+  @include for-size(phone-only) {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    width: 100%;
+    box-shadow: none;
+  }
 }
 
 .container-fluid {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
+section {
+  margin-bottom: 22px;
 
-.general-wrapper {
-  flex: 0 0 85%;
-  background-color: $page-background-color;
+  @include for-size(phone-only) {
+    margin-bottom: 6px;
+  }
 }
 
 #pages {
-  margin: 7rem 0 0 29rem;
-}
+  margin-top: 80px;
+  margin-left: 15vw;
 
+  @include for-size(phone-only) {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+}
 
 .content__header {
   flex: 1 1 100%;
@@ -42,11 +61,18 @@
   background-color: $color-light;
 
   h1 {
-    margin-left: 5px;
+    margin-left: 15px;
   }
 }
 
 .content__body {
   background-color: $color-light;
   flex: 100%;
+
+  @include for-size(phone-only) {
+    width: 100%;
+  }
+  @include for-size(tablet-portrait-up) {
+    width: 100%;
+  }
 }

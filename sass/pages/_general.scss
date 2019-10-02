@@ -5,23 +5,140 @@
   align-items: center;
   padding: 33px 0;
   border-top: 1px solid #e3e3e3;
+
+  @include for-size(phone-only) {
+    width: 100vw;
+    flex-flow: wrap;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .calendar--border {
+    width: 20%;
+    border: 1px solid $input-border-color;
+    border-radius: $radius;
+    padding: 5px;
+
+    @include for-size(phone-only) {
+      width: 90%;
+    }
+
+    @include for-size(tablet-portrait-up) {
+      width: 60%;
+    }
+
+    .calendar--dates {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      cursor: pointer;
+
+      * {
+        margin-left: 16px;
+      }
+
+      .divider {
+        height: 27px;
+        width: 1px;
+        background-color: $input-border-color;
+      }
+    }
+  }
+
+  .btn-primary {
+    margin-left: 13px;
+
+    @include for-size(phone-only) {
+      margin: 10px 0;
+      width: 45%;
+    }
+
+    @include for-size(tablet-portrait-up) {
+      margin: 10px 0;
+      width: 25%;
+    }
+  }
 }
 
 .general__statistics {
   display: flex;
   justify-content: center;
   flex: 100%;
+  padding: 40px;
+  @include for-size(phone-only) {
+    padding: 0;
+  }
 }
 
 .single-stat {
   display: flex;
   border-bottom: 1px solid #e3e3e3;
-  align-content: space-between
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  width: 80%;
 }
 
 .row-stats {
   display: flex;
-  flex: 100%;
+  flex: 0 0 50%;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.general__earnings-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 100%;
+  padding: 50px 0;
+
+  @include for-size(phone-only) {
+    padding: 50px 0;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    padding: 50px 0;
+  }
+
+  .section-header {
+    padding-left: 15px;
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+  #myChart {
+    padding-top: 15px;
+    width: 80vw !important;
+
+    @include for-size(phone-only) {
+      margin: 0 auto;
+      width: 95vw !important;
+      max-height: 260px !important;
+    }
+    @include for-size(tablet-portrait-up) {
+      margin: 0 auto;
+      width: 95vw !important;
+      max-height: 460px !important;
+    }
+  }
+  
+  .graph {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    @include for-size(phone-only) {
+      display: none;
+    }
+
+    img {
+      height: 100%;
+    }
+  }
 }

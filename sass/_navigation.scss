@@ -12,24 +12,22 @@
 }
 
 .menu__panel {
-  flex: 0 0 12%;
   position: fixed;
   top: 0;
   left: 0;
-  // height: 100vh;
+  width: 15vw;
+  height: 100vh;
   background-color: #191919;
   z-index: 2;
 
   @include for-size(phone-only) {
-    position: static;
-    flex: 0 0 100%;
+    width: 100vw;
     background-color: transparent;
     margin-top: 60px;
   }
 
   @include for-size(tablet-portrait-up) {
-    position: static;
-    flex: 0 0 100%;
+    width: 100vw;
     background-color: transparent;
     margin-top: 60px;
   }
@@ -131,10 +129,42 @@ nav ul li:active {
   }
 }
 
-/* User Panel */
+.menu__manager {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+
+  .manager--photo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+
+    a {
+      @include for-size(tablet-portrait-up) {
+        padding: 0 20px;
+      }
+    }
+
+    @include for-size(tablet-portrait-up) {
+      justify-content: flex-start;
+    }
+
+    .status {
+      position: relative;
+      .i-status {
+        top: 0;
+        right: 0;
+        width: 11px;
+        height: 11px;
+        background-color: green;
+      }
+    }
+  }
+}
 
 .user__panel {
-  width: 100%;
+  width: 100vw;
   display: flex;
   height: 60px;
   justify-content: flex-end;
@@ -164,16 +194,7 @@ nav ul li:active {
     }
 
     @include for-size(phone-only) {
-      // position: absolute;
-      // left: -1px;
-      // top: 0;
       padding: 20px 10px;
-    }
-
-    @include for-size(tablet-portrait-up) {
-      // position: absolute;
-      // left: 0;
-      // top: 0;
     }
   }
 

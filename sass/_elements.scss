@@ -48,6 +48,16 @@ textarea {
     cursor: pointer;
     color: $link-hover-color;
   }
+
+  &.icon-refresh {
+    width: 20px;
+    height: 17px;
+  }
+
+  &.icon-calendar {
+    height: 18px;
+    font-size: 1.3rem;
+  }
 }
 
 .i-status {
@@ -59,4 +69,8 @@ textarea {
   border-radius: 50%;
   background-color: $button-color;
   z-index: 1;
+}
+
+hr {
+  border-color: #333;
 }
