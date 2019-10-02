@@ -2,7 +2,7 @@
 /* Font sizes */
 /* Fonts */
 /* Other */
-@import url(/vendor/Glyphter.css);
+@import url(../vendor/Glyphter.css);
 *, *::before, *::after { box-sizing: border-box; }
 
 html { font-size: 10px; }
