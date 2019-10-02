@@ -3,7 +3,9 @@
   color: $btn-text;
   border-radius: $radius;
   transition: $transition;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-width: 0;
   border-style: solid;
   padding: 13px;
@@ -30,4 +32,18 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) and (max-width: 899px) { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) and (max-width: 1199px) { @content; }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) and (max-width: 1799px){ @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
 }
