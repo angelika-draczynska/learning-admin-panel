@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "General.css",
+	"sources": [
+		"../../sass/pages/General.scss"
+	],
+	"names": [],
+	"mappings": "AACA,AAAA,8BAA8B,CAAC;EAC7B,KAAK,EAAE,IAAI;CACZ;;AAED,AAAA,2BAA2B,CAAC;EACxB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,MAAM;EACf,gBAAgB,EAAE,KAAK;CACxB"
+}
